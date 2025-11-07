@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use OpenAPI\Attributes as OA;
+//use OpenAPI\Attributes as OA;
+//use OpenAPI\Annotations as OA;
 
 /**
+ * @OA\OpenApi(
  * @OA\Info(
  *    version="1.0.0",
  *    title="Documentacion de API de Jaime Jeovanny Cortez Flores",
@@ -15,6 +17,7 @@ use OpenAPI\Attributes as OA;
  *        name="Apache 2.0",
  *        url="http://www.apache.org/licenses/LICENSE-2.0.html"
  *    )
+ * )
  * )
  * 
  * @OA\Server(
@@ -45,6 +48,7 @@ use OpenAPI\Attributes as OA;
  *   name="Zonas",
  *   description="Proyecto de desarrollo de API para mantenimiento de tabla de bd Catalogos, espeficicamente para la tabla zona"
  * )
+ * 
  * 
  */
 abstract class Controller
